@@ -1,0 +1,7 @@
+---
+- import_playbook: hostname.yml
+- import_playbook: crt_install
+- import_playbook: cri_socket.yml
+- import_playbook: kubeadm-kubectl-kubelet.yml
+- import_playbook: settingup-cluster.yml
+- import_playbook: post-cluster-setup.yml

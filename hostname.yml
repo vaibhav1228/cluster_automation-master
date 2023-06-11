@@ -1,0 +1,7 @@
+---
+ - name: setting up unique hostname to every node of cluster
+   hosts: all
+   tasks: 
+       - name: setting-up hostname
+         hostname: 
+              name: "{{ host_name }}"
